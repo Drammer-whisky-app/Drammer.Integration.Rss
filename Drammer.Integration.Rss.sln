@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drammer.Package.Template", "src/Drammer.Package.Template\Drammer.Package.Template.csproj", "{8A496FD4-1133-4A9B-A3C9-FAF96EBD591B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drammer.Integration.Rss", "src\Drammer.Integration.Rss\Drammer.Integration.Rss.csproj", "{8A496FD4-1133-4A9B-A3C9-FAF96EBD591B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{7E308D70-4167-40B5-BFC5-F5A2FB16BB8A}"
 	ProjectSection(SolutionItems) = preProject
@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		LICENSE = LICENSE
 		README.md = README.md
 		SECURITY.md = SECURITY.md
+		icon.png = icon.png
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{56798D51-C912-4418-9CCE-0B2F54ED88C3}"
@@ -21,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{
 		.github\workflows\release.yml = .github\workflows\release.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drammer.Integration.Rss.Tests", "src\Drammer.Integration.Rss.Tests\Drammer.Integration.Rss.Tests.csproj", "{02AE532B-C3E3-45CB-83A8-78C303C01339}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,8 +34,13 @@ Global
 		{8A496FD4-1133-4A9B-A3C9-FAF96EBD591B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A496FD4-1133-4A9B-A3C9-FAF96EBD591B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A496FD4-1133-4A9B-A3C9-FAF96EBD591B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02AE532B-C3E3-45CB-83A8-78C303C01339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02AE532B-C3E3-45CB-83A8-78C303C01339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02AE532B-C3E3-45CB-83A8-78C303C01339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02AE532B-C3E3-45CB-83A8-78C303C01339}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8A496FD4-1133-4A9B-A3C9-FAF96EBD591B} = {56798D51-C912-4418-9CCE-0B2F54ED88C3}
+		{02AE532B-C3E3-45CB-83A8-78C303C01339} = {ED1A2648-32DE-4166-9A59-2AE3F5E80693}
 	EndGlobalSection
 EndGlobal
