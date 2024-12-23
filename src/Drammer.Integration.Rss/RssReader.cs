@@ -3,9 +3,9 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using Drammer.Common;
 using Drammer.Integration.Rss.Models;
+using Edi.SyndicationFeed.ReaderWriter;
+using Edi.SyndicationFeed.ReaderWriter.Rss;
 using Microsoft.Extensions.Logging;
-using Microsoft.SyndicationFeed;
-using Microsoft.SyndicationFeed.Rss;
 
 namespace Drammer.Integration.Rss;
 

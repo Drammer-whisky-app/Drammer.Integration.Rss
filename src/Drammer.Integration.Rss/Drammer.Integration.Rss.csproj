@@ -27,12 +27,12 @@
 
     <ItemGroup>
         <PackageReference Include="Drammer.Common" Version="1.7.0" />
+        <PackageReference Include="Edi.SyndicationFeed.ReaderWriter" Version="2.3.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.SyndicationFeed.ReaderWriter" Version="1.0.2" />
     </ItemGroup>
 
     <ItemGroup>

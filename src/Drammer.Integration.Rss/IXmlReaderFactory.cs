@@ -1,5 +1,5 @@
 ﻿using System.Xml;
-using Microsoft.SyndicationFeed;
+using Edi.SyndicationFeed.ReaderWriter;
 
 namespace Drammer.Integration.Rss;
 

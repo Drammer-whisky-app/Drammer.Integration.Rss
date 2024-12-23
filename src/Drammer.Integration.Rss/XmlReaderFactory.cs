@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Xml;
-using Microsoft.SyndicationFeed;
-using Microsoft.SyndicationFeed.Rss;
+using Edi.SyndicationFeed.ReaderWriter;
+using Edi.SyndicationFeed.ReaderWriter.Rss;
 
 namespace Drammer.Integration.Rss;
 
