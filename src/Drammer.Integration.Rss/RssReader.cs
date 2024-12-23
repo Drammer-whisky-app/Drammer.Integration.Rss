@@ -9,6 +9,9 @@ using Microsoft.SyndicationFeed.Rss;
 
 namespace Drammer.Integration.Rss;
 
+/// <summary>
+/// The RSS reader.
+/// </summary>
 public sealed partial class RssReader : IRssReader
 {
     private readonly string _rssFeedUrl;
@@ -23,6 +26,7 @@ public sealed partial class RssReader : IRssReader
         _logger = logger;
     }
 
+    /// <inheritdoc />
     public async Task<Result<List<Article>>> FetchAsync(
         DateTime? startDate = null,
         IDictionary<string, string>? arguments = null,
@@ -85,6 +89,7 @@ public sealed partial class RssReader : IRssReader
         return Result.Success(result);
     }
 
+    /// <inheritdoc />
     [Obsolete]
     public async Task<Result<List<Article>>> FetchAllAsync(
         int timeoutBetweenIterationsInMs = 5000,
