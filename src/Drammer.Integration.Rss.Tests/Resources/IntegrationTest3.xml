@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/">
+    <channel>
+        <atom:id>tag:example.com,1999:blog-dummy-12345</atom:id>
+        <lastBuildDate>Sun, 22 Dec 2024 10:30:56 +0000</lastBuildDate>
+        <category>Dummy Category 1</category>
+        <category>Dummy Category 2</category>
+        <title>Dummy Title</title>
+        <description>Dummy description for the channel.</description>
+        <link>https://example.com</link>
+        <managingEditor>dummy@example.com (Dummy Editor)</managingEditor>
+        <generator>Dummy Generator</generator>
+        <openSearch:totalResults>100</openSearch:totalResults>
+        <openSearch:startIndex>1</openSearch:startIndex>
+        <openSearch:itemsPerPage>10</openSearch:itemsPerPage>
+
+        <item>
+            <guid isPermaLink="false">tag:example.com,1999:blog-dummy-12345.post-1</guid>
+            <pubDate>Thu, 05 Dec 2024 18:38:00 +0000</pubDate>
+            <atom:updated>2024-12-05T18:38:51.792+00:00</atom:updated>
+            <category>Dummy Subcategory 1</category>
+            <title>Dummy Item Title 1</title>
+            <description>Dummy description for item 1.</description>
+            <link>https://example.com/dummy-item-1</link>
+        </item>
+
+        <item>
+            <guid isPermaLink="false">tag:example.com,1999:blog-dummy-12345.post-2</guid>
+            <pubDate>Wed, 04 Dec 2024 10:25:00 +0000</pubDate>
+            <atom:updated>2024-12-04T10:25:00.000+00:00</atom:updated>
+            <category>Dummy Subcategory 2</category>
+            <title>Dummy Item Title 2</title>
+            <description>Dummy description for item 2.</description>
+            <link>https://example.com/dummy-item-2</link>
+        </item>
+
+        <item>
+            <guid isPermaLink="false">tag:example.com,1999:blog-dummy-12345.post-3</guid>
+            <pubDate>Tue, 03 Dec 2024 09:20:00 +0000</pubDate>
+            <atom:updated>2024-12-03T09:20:00.000+00:00</atom:updated>
+            <category>Dummy Subcategory 3</category>
+            <title>Dummy Item Title 3</title>
+            <description>Dummy description for item 3.</description>
+            <link>https://example.com/dummy-item-3</link>
+        </item>
+    </channel>
+</rss>

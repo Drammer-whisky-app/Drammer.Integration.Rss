@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+
+    <channel>
+        <title>Dummy Title</title>
+        <atom:link href="https://example.com/feed/" rel="self" type="application/rss+xml" />
+        <link>https://example.com</link>
+        <description>Dummy description for the RSS feed.</description>
+        <lastBuildDate>Sun, 22 Dec 2024 20:30:51 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <generator>Dummy Generator</generator>
+
+        <item>
+            <title>Dummy Item Title 1</title>
+            <link>https://example.com/dummy-link-1</link>
+            <dc:creator><![CDATA[dummy_author]]></dc:creator>
+            <pubDate>Mon, 23 Dec 2024 08:06:18 +0000</pubDate>
+            <category><![CDATA[Dummy Category 1]]></category>
+            <category><![CDATA[Dummy Category 2]]></category>
+            <guid isPermaLink="false">https://example.com/dummy-guid-1</guid>
+            <description><![CDATA[Dummy description for item 1.]]></description>
+            <content:encoded><![CDATA[<p>Dummy content for item 1.</p>]]></content:encoded>
+        </item>
+
+        <item>
+            <title>Dummy Item Title 2</title>
+            <link>https://example.com/dummy-link-2</link>
+            <dc:creator><![CDATA[dummy_author]]></dc:creator>
+            <pubDate>Mon, 23 Dec 2024 08:05:43 +0000</pubDate>
+            <category><![CDATA[Dummy Category 3]]></category>
+            <guid isPermaLink="false">https://example.com/dummy-guid-2</guid>
+            <description><![CDATA[Dummy description for item 2.]]></description>
+            <content:encoded><![CDATA[<p>Dummy content for item 2.</p>]]></content:encoded>
+        </item>
+
+        <item>
+            <title>Dummy Item Title 3</title>
+            <link>https://example.com/dummy-link-3</link>
+            <dc:creator><![CDATA[dummy_author]]></dc:creator>
+            <pubDate>Mon, 23 Dec 2024 08:04:28 +0000</pubDate>
+            <category><![CDATA[Dummy Category 4]]></category>
+            <guid isPermaLink="false">https://example.com/dummy-guid-3</guid>
+            <description><![CDATA[Dummy description for item 3.]]></description>
+            <content:encoded><![CDATA[<p>Dummy content for item 3.</p>]]></content:encoded>
+        </item>
+
+        <!-- Additional dummy items can be added here following the same structure -->
+
+    </channel>
+</rss>

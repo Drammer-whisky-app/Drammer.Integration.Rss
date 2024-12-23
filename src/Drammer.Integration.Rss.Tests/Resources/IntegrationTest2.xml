@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Dummy Channel Title</title>
+        <link>https://example.com</link>
+        <description>Dummy description for the channel</description>
+        <item>
+            <title><![CDATA[Dummy Item 1]]></title>
+            <link>https://example.com/dummy-link-1</link>
+            <description><![CDATA[<img src="/path/to/dummy-image.jpg"/><br />Dummy description for item 1]]></description>
+            <pubDate>Mon, 23 Dec 2024 08:00:00 -0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dummy Item 2]]></title>
+            <link>https://example.com/dummy-link-2</link>
+            <description><![CDATA[<img src="/path/to/dummy-image-2.jpg"/><br />Dummy description for item 2]]></description>
+            <pubDate>Fri, 20 Dec 2024 11:45:00 -0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dummy Item 3]]></title>
+            <link>https://example.com/dummy-link-3</link>
+            <description><![CDATA[<img src="/path/to/dummy-image-3.jpg"/><br />Dummy description for item 3]]></description>
+            <pubDate>Fri, 20 Dec 2024 08:00:00 -0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dummy Item 4]]></title>
+            <link>https://example.com/dummy-link-4</link>
+            <description><![CDATA[<img src="/path/to/dummy-image-4.jpg"/><br />Dummy description for item 4]]></description>
+            <pubDate>Thu, 19 Dec 2024 10:05:00 -0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dummy Item 5]]></title>
+            <link>https://example.com/dummy-link-5</link>
+            <description><![CDATA[<img src="/path/to/dummy-image-5.jpg"/><br />Dummy description for item 5]]></description>
+            <pubDate>Thu, 19 Dec 2024 08:00:00 -0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dummy Item 6]]></title>
+            <link>https://example.com/dummy-link-6</link>
+            <description><![CDATA[<img src="/path/to/dummy-image-6.jpg"/><br />Dummy description for item 6]]></description>
+            <pubDate>Wed, 18 Dec 2024 07:20:00 -0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dummy Item 7]]></title>
+            <link>https://example.com/dummy-link-7</link>
+            <description><![CDATA[<img src="/path/to/dummy-image-7.jpg"/><br />Dummy description for item 7]]></description>
+            <pubDate>Tue, 17 Dec 2024 11:36:35 -0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dummy Item 8]]></title>
+            <link>https://example.com/dummy-link-8</link>
+            <description><![CDATA[<img src="/path/to/dummy-image-8.jpg"/><br />Dummy description for item 8]]></description>
+            <pubDate>Tue, 17 Dec 2024 11:35:56 -0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dummy Item 9]]></title>
+            <link>https://example.com/dummy-link-9</link>
+            <description><![CDATA[<img src="/path/to/dummy-image-9.jpg"/><br />Dummy description for item 9]]></description>
+            <pubDate>Tue, 17 Dec 2024 11:31:19 -0800</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dummy Item 10]]></title>
+            <link>https://example.com/dummy-link-10</link>
+            <description><![CDATA[<img src="/path/to/dummy-image-10.jpg"/><br />Dummy description for item 10]]></description>
+            <pubDate>Tue, 17 Dec 2024 11:31:01 -0800</pubDate>
+        </item>
+    </channel>
+</rss>

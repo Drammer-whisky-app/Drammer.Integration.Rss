@@ -28,4 +28,13 @@
       <ProjectReference Include="..\Drammer.Integration.Rss\Drammer.Integration.Rss.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Resources\IntegrationTest1.xml" />
+      <EmbeddedResource Include="Resources\IntegrationTest1.xml" />
+      <None Remove="Resources\IntegrationTest2.xml" />
+      <EmbeddedResource Include="Resources\IntegrationTest2.xml" />
+      <None Remove="Resources\IntegrationTest3.xml" />
+      <EmbeddedResource Include="Resources\IntegrationTest3.xml" />
+    </ItemGroup>
+
 </Project>
