@@ -1,6 +1,6 @@
 ﻿using System.Xml;
+using Edi.SyndicationFeed.ReaderWriter;
 using Microsoft.Extensions.Logging.Abstractions;
-using Microsoft.SyndicationFeed;
 
 namespace Drammer.Integration.Rss.Tests;
 
