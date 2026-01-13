@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+        <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>Latest</LangVersion>
@@ -11,7 +11,7 @@
         <PackageTags>rss</PackageTags>
         <PackageReleaseNotes>https://github.com/Drammer-whisky-app/Drammer.Integration.Rss/releases</PackageReleaseNotes>
         <Authors>Marthijn van den Heuvel,Drammer</Authors>
-        <Copyright>Copyright (c) 2024 Drammer whisky app</Copyright>
+        <Copyright>Copyright (c) 2024-2026 Drammer whisky app</Copyright>
 
         <GenerateDocumentationFile>True</GenerateDocumentationFile>
         <RepositoryType>git</RepositoryType>
@@ -26,7 +26,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Drammer.Common" Version="3.10.0" />
+        <PackageReference Include="Drammer.Common" Version="4.0.0" />
         <PackageReference Include="Edi.SyndicationFeed.ReaderWriter" Version="2.5.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.1" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
