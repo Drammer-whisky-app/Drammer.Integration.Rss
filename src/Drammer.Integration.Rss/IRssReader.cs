@@ -19,15 +19,4 @@ public interface IRssReader
         DateTime? startDate = null,
         IDictionary<string, string>? arguments = null,
         CancellationToken cancellationToken = default);
-
-    /// <summary>
-    /// Fetch all items in an RSS feed.
-    /// </summary>
-    /// <param name="timeoutBetweenIterationsInMs">The timeout between iterations in milliseconds.</param>
-    /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A list of <see cref="Article"/>.</returns>
-    [Obsolete]
-    Task<Result<List<Article>>> FetchAllAsync(
-        int timeoutBetweenIterationsInMs = 5000,
-        CancellationToken cancellationToken = default);
 }

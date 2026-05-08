@@ -1,5 +1,4 @@
-﻿using System.Net;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using System.Xml;
 using Drammer.Common;
 using Drammer.Integration.Rss.Models;
@@ -87,93 +86,6 @@ public sealed partial class RssReader : IRssReader
         }
 
         return Result.Success(result);
-    }
-
-    /// <inheritdoc />
-    [Obsolete]
-    public async Task<Result<List<Article>>> FetchAllAsync(
-        int timeoutBetweenIterationsInMs = 5000,
-        CancellationToken cancellationToken = default)
-    {
-        if (timeoutBetweenIterationsInMs < 0)
-        {
-            throw new ArgumentException(
-                "The timeout between iterations should be a positive number.",
-                nameof(timeoutBetweenIterationsInMs));
-        }
-
-        _logger.LogDebug("FetchAllAsync(): starting");
-
-        var result = new List<Article>();
-
-        Result<List<Article>>? fetchResult = null;
-        var iteration = 1;
-        var stop = false;
-        do
-        {
-            try
-            {
-                fetchResult = await FetchAsync(
-                    arguments: FetchAllArguments(iteration),
-                    cancellationToken: cancellationToken).ConfigureAwait(false);
-
-                if (fetchResult is {IsSuccess: true, Value: not null} && fetchResult.Value.Count != 0)
-                {
-                    // check if we found the same article again
-                    if (result.Count != 0)
-                    {
-                        var title = result.Last().Title;
-                        if (title != null && title.Equals(fetchResult.Value.Last().Title))
-                        {
-                            _logger.LogDebug(
-                                "FetchAllAsync(): stopping because the same article is found twice");
-                            stop = true;
-                        }
-                    }
-
-                    if (!stop)
-                    {
-                        result.AddRange(fetchResult.Value);
-                    }
-                }
-                else
-                {
-                    _logger.LogDebug("FetchAllAsync(): stopping because no articles were found");
-                    stop = true;
-                }
-            }
-            catch (WebException ex)
-            {
-                _logger.LogWarning(ex, "FetchAllAsync(): stopping because of error `{Message}`", ex.Message);
-                stop = true;
-            }
-
-            iteration++;
-
-            if (timeoutBetweenIterationsInMs > 0)
-            {
-                await Task.Delay(timeoutBetweenIterationsInMs, cancellationToken).ConfigureAwait(false);
-            }
-        } while (!stop && fetchResult != null && fetchResult is {IsSuccess: true, Value: not null}
-                 && fetchResult.Value.Count != 0);
-
-        _logger.LogDebug("FetchAllAsync(): done, found {ArticleCount} articles", result.Count);
-
-        return Result.Success(result);
-    }
-
-    /// <summary>
-    /// Gets additional arguments for the <see cref="FetchAllAsync"/> function per iteration.
-    /// </summary>
-    /// <param name="iteration">
-    /// The iteration, starting by 1.
-    /// </param>
-    /// <returns>
-    /// The <see cref="IDictionary{TKey, TValue}"/>.
-    /// </returns>
-    private IDictionary<string, string>? FetchAllArguments(int iteration)
-    {
-        return null;
     }
 
     /// <summary>
